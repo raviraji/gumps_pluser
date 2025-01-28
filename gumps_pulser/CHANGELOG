@@ -1,0 +1,40 @@
+Version 1.1.1
+Features
+1. Add support for new login API
+
+Bug Fixes
+1. Changing all file path to absolute path
+2. Fixing empty directory not being pushed to Gitlab
+
+Known Issues
+1. Script getting stuck when upload fails
+2. Path changing while execution 
+
+Version 1.1
+
+Features
+1. Change file names to be easily readable
+2. All configuration is now pulled from config.ini
+3. Code now supports python3
+4. Addition of CI/CD jobs to build mender deployment image
+
+Bug Fixes
+1. Temperature and WiFi signal measurement has been fixed
+2. Logger has been fixed
+3. Acquisition fails when buffer size and averages are large - fixed
+4. Acquisition time takes a bit longer - fixed
+
+Include Support for IMX7D 
+1. Set GPIO Rules
+2. GPIO library added
+3. Change frequency mapping - {30: '1', 35: '2', 40: '3', 45: '4', 50: '5', 55: '6', 60: '7', 65: '8', 70: '9', 75: 'a', 80: 'b', 85: 'c', 90: 'd', 95: 'e'}
+4. Change tty from /dev/ttyUSB0 to /dev/ttymxc5
+5. Update directories from /home/pi/* to /home/ubuntu/*
+
+Include Support for Systemd instead of cron
+
+1. Creating Systemd service pulser_hanning.service
+2. Add logging support and auto restart
+3. Changing python script to upload new logfile
+
+Resource - https://stackoverflow.com/questions/37585758/how-to-redirect-output-of-systemd-service-to-a-file
